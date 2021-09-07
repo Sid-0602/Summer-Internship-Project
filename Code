@@ -18,7 +18,7 @@ int IRSensor = 9;
 
 // connects Water Sensor to aurdino pins
 
-int waterSens= 8;
+int waterSens= A5;
 int waterVal;
 
 // connects PIR sensor
