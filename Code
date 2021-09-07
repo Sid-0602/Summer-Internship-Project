@@ -99,7 +99,7 @@ void loop()
     duration = pulseIn(echoPin2, HIGH);
     dist2 = Speed*duration/2;
 
-    if(dist1<10)
+    if(dist2<10)
     {
       digitalWrite(led2,HIGH);
     }
