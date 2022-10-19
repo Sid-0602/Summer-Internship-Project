@@ -1,0 +1,27 @@
+//definition of digital pins as pin to control the LED
+int led1=13; //output of Ultrasonic 01
+int led2=12; //output of Ultrasonic 02
+int led3=11; //output of IR Sensor
+int led4=10;  //output of Water Sensor
+int led5=7;   //output of PIR
+
+// connect Ultrasonic sensor to arduino pins
+int trigPin1=1;
+int echoPin1=2;
+int trigPin2=3;
+int echoPin2=4;
+float Speed = 0.0343; //sound speed in cm/us
+long duration, dist1, dist2;
+
+// connect ir sensor to arduino pin 9
+int IRSensor = 9;
+
+// connects Water Sensor to aurdino pins
+
+int waterSens= A5;
+int waterVal;
+
+// connects PIR sensor
+int PIRsensor = 5;              // the pin that the PIR sensor is atteched to
+int state = LOW;             // by default, no motion detected
+int val = 0;                 // variable to store the sensor status (value)
